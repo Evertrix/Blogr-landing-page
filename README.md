@@ -1,1 +1,3 @@
-# Bloger Landing Page Project 
+# Bloger Landing Page Project
+
+### A challenge project from frontendmentor.io
