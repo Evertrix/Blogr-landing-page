@@ -29,7 +29,6 @@ body {
   font-family: 'Inter', sans-serif;
   color: #343a40; /*we put color in body because - color gets inherited*/
   /*border-bottom: 8px solid #087f5b;*/
-  background-color: red;
 }
 
 .container {
