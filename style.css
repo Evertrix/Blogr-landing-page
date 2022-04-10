@@ -13,7 +13,9 @@ FONT SIZE SYSTEM (px)
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+/*font-family: 'Overpass', sans-serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
 
 * {
   margin: 0;
@@ -25,8 +27,9 @@ FONT SIZE SYSTEM (px)
  /*GENERAL STYLES */
  /*------------------------ */
 body {
+  overflow-x: hidden;
   /* The priority font-family will be Intern. If not available, use the second option which is sans-serif */
-  font-family: 'Inter', sans-serif;
+  font-family: 'Overpass', sans-serif;
   color: #343a40; /*we put color in body because - color gets inherited*/
   /*border-bottom: 8px solid #087f5b;*/
 }
@@ -48,6 +51,8 @@ body {
   width: 960px;
   margin: 0 auto;
 }
+
+/*Header Section*/
 
 header,
 section {
@@ -93,6 +98,12 @@ nav{
 
 nav a {
   margin-right: 24px;
+  color: hsl(0, 0%, 100%);
+  text-decoration-line: none;
+}
+
+.nav-arrow {
+  width: 10px;
 }
 
 .logo a img {
@@ -107,6 +118,8 @@ nav a {
 
 .featured-buttons a {
   margin-right: 24px;
+  color: hsl(0, 0%, 100%);
+  text-decoration-line: none;
 }
 
 .sub-header {
@@ -118,10 +131,16 @@ nav a {
 }
 
 .main-heading {
-  margin-bottom: 24px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 52px;
+  margin-bottom: 16px;
 }
 
 .sub-heading {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-weight: 300;
   margin-bottom: 48px;
 }
 
@@ -129,11 +148,46 @@ nav a {
   padding-bottom: 96px;
 }
 
+.btn-with-bg {
+  display: inline-block;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  padding: 16px 32px;
+}
+.btn-without-bg {
+  display: inline-block;
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 16px 20px;
+}
+
+.btn-login {
+  display: inline-block;
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 16px 20px;
+}
+
+.btn-with-bg + .btn-without-bg, .btn-login + .btn-with-bg {
+  margin-left: 16px;
+}
+
 
 .middle-sections {
-  /*width: 1440px;*/
   /*margin: 0 auto;*/
-  margin-bottom: 5rem;
+  margin-bottom: 8.6rem;
 }
 
 
@@ -160,13 +214,18 @@ nav a {
 }
 
 .info-section-heading {
+  position: relative;
   text-align: center;
+  color: hsl(208, 49%, 24%);
+  font-weight: 600;
+  font-size: 30px;
 }
 
 .description-section {
   padding-left: 15rem;
   /*width: 500px;*/
   margin-top: 100px;
+  justify-self: center;
 }
 
 
@@ -175,40 +234,54 @@ nav a {
   grid-column: 2;
 }
 
-.desc, .desc2 {
+.desc-intro, .desc-robust {
+  /*width: 500px;*/
+
   margin-bottom: 50px;
   text-align: start;
 }
 
-.desc {
+.desc-intro {
   grid-row: 2;
   grid-column: 1;
 }
 
-.desc h4 {
+.desc-intro .desc-intro--heading {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(208, 49%, 24%);
   margin-bottom: 24px;
 }
 
-.desc p {
+.desc-intro .desc-intro--text {
+  /*letter-spacing: 1px;*/
+  word-spacing: 1px;
+  color: hsl(207, 13%, 34%);
   line-height: 1.6;
 }
 
-.desc2 {
+.desc-robust {
   grid-row: 3;
   grid-column: 1;
 }
 
-.desc2 h4 {
+.desc-robust .desc-robust--heading {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(208, 49%, 24%);
   margin-bottom: 24px;
 }
 
-.desc2 p {
+.desc-robust .desc-robust--text {
+  word-spacing: 1px;
+  color: hsl(207, 13%, 34%);
   line-height: 1.6;
 }
 
 .featured-desktop {
-  width: 90%;
-  margin-left: 5rem;
+  position: absolute;
+  width: 55%;
+  margin-left: -13rem;
 
   margin-top: -80px;
   grid-column: 2 / 4; /* span from grid column line 1 to 3 (i.e., span 2 columns) */
@@ -228,7 +301,7 @@ nav a {
 
   margin-bottom: 5rem;
   height: 25rem;
-  color: #FFF;
+  color: hsl(0, 0%, 100%);
 }
 
 .phone-container {
@@ -268,6 +341,20 @@ nav a {
   /*margin-left: 3rem;*/
 }
 
+.phone-info--heading {
+  /*word-spacing: 1px;*/
+  font-weight: 300;
+  font-size: 36px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 24px;
+}
+
+.phone-info--text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
 
 .laptop-wrapper {
   margin-bottom: 5rem;
@@ -293,10 +380,33 @@ nav a {
   /*margin-left: 5rem;*/
 }
 
+.laptop-desc--heading {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 24px;
+}
+
+.laptop-desc--text {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.laptop-powerful--heading {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 24px;
+}
+
+.laptop-powerful--text {
+  line-height: 1.6;
+}
+
 footer {
-  height: 15rem;
+  height: 25rem;
   background-color: hsl(240, 10%, 16%);
-  color: white;
+  color: hsl(0, 0%, 100%);
   display: grid;
   align-items: center;
   border-top-right-radius: 80px;
@@ -311,4 +421,19 @@ footer {
   justify-content: center;
   align-content: center;
   justify-items: center;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+li {
+  color: hsl(240, 2%, 79%);
+  list-style-type: none;
+}
+
+li:not(:last-child) {
+  margin-bottom: 12px;
 }
