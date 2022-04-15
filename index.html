@@ -1,1 +1,191 @@
-<!doctype html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport"          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">    <meta http-equiv="X-UA-Compatible" content="ie=edge">    <title>Blogr Landing Page</title>    <link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head><body><div class="container">    <div class="image-holder">        <div class="top-container">            <!--    <img src="./images/bg-pattern-intro-desktop.svg" width="300px" alt="">-->            <header>                <!--    <div class="header-container">-->                <div class="logo">                    <a href="#">                        <img src="images/logo.svg" alt="">                    </a>                </div>                <nav>                    <!--        <a href="#">-->                    <!--          <img src="images/logo.svg" alt="">-->                    <!--        </a>-->                    <a href="#">Product <i class="fa fa-angle-down"></i></a>                    <a href="#">Company <i class="fa fa-angle-down"></i></a>                    <a href="#">Connect <i class="fa fa-angle-down"></i></a>                </nav>                <div class="featured-buttons">                    <button class="btn-login">Login</button>                    <button class="btn-with-bg">Sign Up</button>                </div>                <!--    </div>-->            </header>            <section class="sub-header">                <h1 class="main-heading">A modern publishing platform</h1>                <h4 class="sub-heading">Grow your audience and build your online brand</h4>                <div class="sub-buttons">                    <button class="btn-with-bg">Start for Free</button>                    <button class="btn-without-bg">Learn More</button>                </div>            </section>        </div>    </div>    <div class="middle-sections">        <h2 class="info-section-heading">Designed for the future</h2>        <section class="info-section">            <div class="description-section">                <div class="desc-intro">                    <h4 class="desc-intro--heading">Introducing an extensible editor</h4>                    <p class="desc-intro--text">                        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating                        content. The editor supports management of multiple blogs and allows easy manipulation of embeds                        such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to                        add functionality or change the looks of a blog.                    </p>                </div>                <div class="desc-robust">                    <h4 class="desc-robust--heading">Robust content management</h4>                    <p class="desc-robust--text">                        Flexible content management enables users to easily move through                        posts. Increase the usability of your blog by adding customized                        categories, sections, format, or flow. With this functionality, you're in                        full control.                    </p>                </div>                <!--        <div class="aside-image">-->                <!--          <img src="./images/illustration-editor-desktop.svg" class="featured-laptop" alt="">-->                <!--        </div>-->            </div>            <div class="aside-image">                <img src="./images/illustration-editor-desktop.svg" class="featured-desktop" alt="">            </div>        </section>    </div>    <!--  <div class="phone-image">-->    <!--    <img class="phone-svg" src="./images/illustration-phones.svg" alt="">-->    <!--  </div>-->    <section class="phone-section">        <!--    <div class="phone-image">-->        <!--      <img class="phone-svg" src="./images/illustration-phones.svg" alt="">-->        <!--    </div>-->        <div class="phone-container">            <div class="phone-image">                <img class="phone-svg" src="./images/illustration-phones.svg" alt="">            </div>            <div class="phone-info">                <h3 class="phone-info--heading">State of the Art Infrastructure</h3>                <p class="phone-info--text">                    With reliability and speed in mind, worldwide data centers provide the                    backbone for ultra-fast connectivity. This ensures your site will load                    instantly, no matter where your readers are, keeping your site                    competitive.                </p>            </div>            <!--    </div>-->        </div>    </section>    <section class="laptop-section">        <div class="laptop-wrapper">            <div class="laptop-image">                <img class="img-laptop-desktop" src="./images/illustration-laptop-desktop.svg" alt="">            </div>            <div class="laptop-desc">                <h3 class="laptop-desc--heading">Free, open, simple</h3>                <p class="laptop-desc--text">                    Blogr is a free and open source application backed by a large community of helpful developers. It                    supports features such as code syntax highlighting, RSS feeds, social media integration, third-party                    commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is                    relatively easy to learn.                </p>                <br/>                <h3 class="laptop-powerful--heading">Powerful tooling</h3>                <p class="laptop-powerful--text">                    Batteries included. We built a simple and straightforward CLI tool that makes customization and                    deployment a breeze, but capable of producing even the most complicated sites.                </p>            </div>            <!--    </div>-->        </div>    </section>    <footer>        <div class="footer-wrapper">            <div class="logo">                <img src="./images/logo.svg" alt="">            </div>            <div class="col-1">                <h6>Products</h6>                <ul>                    <li>Overview</li>                    <li>Pricing</li>                    <li>Pricing</li>                    <li>Marketplace</li>                    <li>Features</li>                    <li>Integrations</li>                </ul>            </div>            <div class="col-2">                <h6>Company</h6>                <ul>                    <li>About</li>                    <li>Team</li>                    <li>Blog</li>                    <li>Careers</li>                </ul>            </div>            <div class="col-3">                <h6>Connect</h6>                <ul>                    <li>Contact</li>                    <li>Newsletter</li>                    <li>LinkedIn</li>                </ul>            </div>        </div>    </footer></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogr Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="image-holder">
+        <div class="top-container">
+            <!--    <img src="./images/bg-pattern-intro-desktop.svg" width="300px" alt="">-->
+            <header class="header-section">
+                <!--    <div class="header-container">-->
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="full-nav visbility">
+                        <nav class="navigation">
+                            <!--        <a href="#">-->
+                            <!--          <img src="images/logo.svg" alt="">-->
+                            <!--        </a>-->
+                            <a href="#">Product <i class="fa fa-angle-down"></i></a>
+                            <a href="#">Company <i class="fa fa-angle-down"></i></a>
+                            <div class="connect-dropdown">
+                                <a href="#" class="connect-btn" title="Connect">Connect <i class="fa fa-angle-down"></i></a>
+                                <div class="connect--dropdown-content grid hidden">
+                                    <a href="#">Contact</a>
+                                    <a href="#">Newsletter</a>
+                                    <a href="#">LinkedIn</a>
+                                </div>
+                            </div>
+                        </nav>
+                    <div class="featured-buttons">
+                        <button class="btn-login">Login</button>
+                        <button class="btn-with-bg btn-very-light-red-hover">Sign Up</button>
+                    </div>
+                </div>
+
+                <!-- <img src="images/icon-hamburger.svg" alt="hamburger" id="mobilemenu"> -->
+                <div class="mobile-navigation hidden">
+                    <img src="images/icon-hamburger.svg" alt="hamburger" class="hamburger-menu" id="mobilemenu">
+                    <!-- Make a toggle -->
+                    <img src="images/icon-close.svg" alt="close" class="close-btn hidden" id="mobilemenu">
+                </div>
+                <!--    </div>-->
+            </header>
+
+            <section class="sub-header">
+                <h1 class="main-heading">A modern publishing platform</h1>
+                <h4 class="sub-heading">Grow your audience and build your online brand</h4>
+                <div class="sub-buttons">
+                    <button class="btn-with-bg btn-very-light-red-hover">Start for Free</button>
+                    <button class="btn-without-bg btn-very-light-red-hover-reverse">Learn More</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="middle-sections">
+        <h2 class="info-section-heading">Designed for the future</h2>
+        <section class="info-section">
+            <div class="description-section">
+                <div class="desc-intro">
+                    <h4 class="desc-intro--heading">Introducing an extensible editor</h4>
+                    <p class="desc-intro--text">
+                        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating
+                        content. The editor supports management of multiple blogs and allows easy manipulation of embeds
+                        such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to
+                        add functionality or change the looks of a blog.
+                    </p>
+                </div>
+                <div class="desc-robust">
+                    <h4 class="desc-robust--heading">Robust content management</h4>
+                    <p class="desc-robust--text">
+                        Flexible content management enables users to easily move through
+                        posts. Increase the usability of your blog by adding customized
+                        categories, sections, format, or flow. With this functionality, you're in
+                        full control.
+                    </p>
+                </div>
+                <!--        <div class="aside-image">-->
+                <!--          <img src="./images/illustration-editor-desktop.svg" class="featured-laptop" alt="">-->
+                <!--        </div>-->
+            </div>
+            <div class="aside-image">
+                <img src="./images/illustration-editor-desktop.svg" class="featured-desktop" alt="">
+                <img src="./images/illustration-editor-mobile.svg" class="featured-mobile hidden" alt="">
+            </div>
+        </section>
+    </div>
+
+
+    <!--  <div class="phone-image">-->
+    <!--    <img class="phone-svg" src="./images/illustration-phones.svg" alt="">-->
+    <!--  </div>-->
+    <section class="phone-section">
+        <!--    <div class="phone-image">-->
+        <!--      <img class="phone-svg" src="./images/illustration-phones.svg" alt="">-->
+        <!--    </div>-->
+        <div class="phone-container">
+            <div class="phone-image">
+                <img class="phone-svg" src="./images/illustration-phones.svg" alt="">
+            </div>
+            <div class="phone-info">
+                <h3 class="phone-info--heading">State of the Art Infrastructure</h3>
+                <p class="phone-info--text">
+                    With reliability and speed in mind, worldwide data centers provide the
+                    backbone for ultra-fast connectivity. This ensures your site will load
+                    instantly, no matter where your readers are, keeping your site
+                    competitive.
+                </p>
+            </div>
+            <!--    </div>-->
+        </div>
+    </section>
+
+
+    <section class="laptop-section">
+        <div class="laptop-wrapper">
+            <div class="laptop-image">
+                <img class="img-laptop-desktop" src="./images/illustration-laptop-desktop.svg" alt="">
+                <img class="img-laptop-mobile hidden" src="./images/illustration-laptop-mobile.svg" alt="">
+            </div>
+            <div class="laptop-desc">
+                <h3 class="laptop-desc--heading">Free, open, simple</h3>
+                <p class="laptop-desc--text">
+                    Blogr is a free and open source application backed by a large community of helpful developers. It
+                    supports features such as code syntax highlighting, RSS feeds, social media integration, third-party
+                    commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is
+                    relatively easy to learn.
+                </p>
+                <br/>
+                <h3 class="laptop-powerful--heading">Powerful tooling</h3>
+                <p class="laptop-powerful--text">
+                    Batteries included. We built a simple and straightforward CLI tool that makes customization and
+                    deployment a breeze, but capable of producing even the most complicated sites.
+                </p>
+            </div>
+            <!--    </div>-->
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="col-1">
+                <h6>Products</h6>
+                <ul>
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h6>Company</h6>
+                <ul>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h6>Connect</h6>
+                <ul>
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
