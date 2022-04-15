@@ -91,16 +91,10 @@ section {
 header {
   padding-top: 64px;
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: 1fr 2fr 3fr;
-  justify-content: space-between;
-  align-items: center;
-=======
   grid-template-columns: 1fr 6fr;
   /* grid-template-columns: repeat(6, 1fr); */
   /* justify-content: space-between; */
   /* align-items: center; */
->>>>>>> 7f76b6b2f572e2f95384379c08bef49a6e33ea16
   /* margin-left: 20px; */
   /* margin-right: 20px; */
   /*gap: 24px;*/
@@ -609,8 +603,6 @@ li:not(:last-child) {
 
 .hidden {
   display: none;
-<<<<<<< HEAD
-=======
 }
 
 .visbility {
@@ -621,5 +613,4 @@ li:not(:last-child) {
 .col-2 ul li:hover, 
 .col-3 ul li:hover {
   text-decoration: underline;
->>>>>>> 7f76b6b2f572e2f95384379c08bef49a6e33ea16
 }
