@@ -1,0 +1,26 @@
+{
+  "name": "blogr-landing-page-scss",
+  "version": "1.0.0",
+  "description": "## A challenge project from frontendmentor.io ### Tech Stack: HTML, CSS, JS",
+  "main": "script.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded styles/scss:styles/css",
+    "sass-prod": "sass --no-source-map --style=compressed styles/scss:styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evertrix/blogr-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evertrix/blogr-landing-page/issues"
+  },
+  "homepage": "https://github.com/Evertrix/blogr-landing-page#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}

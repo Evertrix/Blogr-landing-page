@@ -1,0 +1,43 @@
+/*------------------------ */
+/*FOOTER SECTION */
+/*------------------------ */
+
+footer {
+  background-color: hsl(240, 10%, 16%);
+  color: hsl(0, 0%, 100%);
+  display: grid;
+  align-items: center;
+  border-top-right-radius: 80px;
+}
+
+.footer-wrapper {
+  width: 1080px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 200px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+li {
+  color: hsl(240, 2%, 79%);
+  list-style-type: none;
+}
+
+li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.col-1 ul li:hover,
+.col-2 ul li:hover,
+.col-3 ul li:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,55 @@
+/*------------------------ */
+/*CONCLUSION SECTION */
+/*------------------------ */
+
+.conclusion-section {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+
+.conclusion-wrapper {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: -55% bottom;
+  z-index: 1;
+}
+
+.img-conclusion-desktop {
+  max-width: 100vw;
+  margin-left: -40rem;
+  z-index: 1;
+}
+
+.conclusion-section--information {
+  align-self: center;
+  justify-self: center;
+  margin-left: 35px;
+}
+
+.conclusion-section--free-open-simple--heading {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 24px;
+}
+
+.conclusion-section--free-open-simple--text {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.conclusion-section-powerful--heading {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 24px;
+}
+
+.conclusion-section-powerful--text {
+  line-height: 1.6;
+}

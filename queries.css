@@ -10,6 +10,10 @@ when the viewport is more then 889px and hiding hamburger menu and close-btn */
         justify-self: center;
         visibility: visible !important;
     }
+
+    .connect--dropdown-content {
+        visibility: hidden !important;
+    }
 }
 @media (max-width: 1200px) {
     header {
@@ -19,6 +23,11 @@ when the viewport is more then 889px and hiding hamburger menu and close-btn */
         margin-right: 20px;
     }
 
+    .sub-header {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+    }
     .description-section {
         padding-left: 7rem;
     }
@@ -78,6 +87,10 @@ when the viewport is more then 889px and hiding hamburger menu and close-btn */
         margin-left: 3rem;
         padding-right: 2rem;
     }
+
+    .featured-buttons {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 975px) {
@@ -90,6 +103,12 @@ when the viewport is more then 889px and hiding hamburger menu and close-btn */
         justify-self: center;
         margin-right: 80px;
     } */
+
+    .sub-header {
+        /*margin-left: 64px;*/
+        margin-right: 128px;
+        width: auto;
+    }
 
     header {
         /* grid-template-columns: 1fr 1fr 1fr; */
@@ -164,12 +183,12 @@ when the viewport is more then 889px and hiding hamburger menu and close-btn */
 
     .full-nav {
         position: absolute;
-        top: 50%;
+        top: 128px;
         padding: 50px 0;
         display: block;
         grid-template-columns: 1fr;
         align-items: center;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         max-width: 100%;
         justify-content: center;
         justify-items: center;
@@ -180,6 +199,29 @@ when the viewport is more then 889px and hiding hamburger menu and close-btn */
         text-align: center;
         border: none;
         border-radius: .5rem;
+        z-index: 1;
+    }
+
+    .fa-angle-down {
+        color: hsl(11, 100%, 65%);
+    }
+
+    .connect--dropdown-content {
+        /*width: 150px;*/
+        position: relative;
+        border-radius: 10px;
+        /*margin: 0 auto;*/
+        margin: 16px auto;
+        /*margin-top: 16px;*/
+        /*margin-right: 20px;*/
+        /*padding: 15px 25px;*/
+        background-color: rgb(242, 242, 244);
+        box-shadow: none;
+        /*padding: 48px;*/
+        z-index: 1;
+        width: calc(100% - 60px);
+        line-height: 24px;
+        /*display: block;*/
     }
 
     .featured-buttons {
@@ -189,8 +231,14 @@ when the viewport is more then 889px and hiding hamburger menu and close-btn */
         /* display: block; */
         position: relative;
         text-align: center;
+        border-top: 2px solid rgb(242, 242, 244);
+        width: calc(100% - 60px);
         /* margin: 0 auto; */
       }
+
+    /*.query-btn--change {*/
+    /*    width: calc(100% - 40px);*/
+    /*}*/
 
     .mobile-navigation {
         grid-column-start: 3;
@@ -210,6 +258,7 @@ when the viewport is more then 889px and hiding hamburger menu and close-btn */
         top: 20%;
         visibility: hidden;
         z-index: 1;
+        line-height: 40px;
         /* grid-template-columns: 1fr; */
         /* grid-column-start: 2; */
         /* grid-row-start: 2; */
@@ -458,10 +507,29 @@ when the viewport is more then 889px and hiding hamburger menu and close-btn */
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+    .full-nav {
+        /*width: 100%;*/
+        left: 25%;
+        top: 128px;
+    }
+}
+
+@media (max-width: 480px) {
+    .full-nav {
+        width: 80%;
+        left: 10%;
+        top: 128px;
+    }
 }
 
 @media (max-width: 339px) {
+    .full-nav {
+        width: 100%;
+        left: 0;
+        top: 128px;
+    }
+
     .sub-buttons {
         /* display: block; */
         display: grid;
