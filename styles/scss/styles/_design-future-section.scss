@@ -4,6 +4,7 @@
 
 
 .designed-for-the-future-section {
+  overflow: hidden;
   width: 67.5rem;
   margin: 0 auto;
   margin-bottom: 8.6rem;
@@ -88,10 +89,10 @@
 .featured-desktop {
   position: absolute;
   max-width: 100vw;
-  height:auto;
+  height: auto;
   grid-column: 2 / 4; /* span from grid column line 1 to 3 (i.e., span 2 columns) */
   grid-row: 2 / 4;
   margin-left: -7rem;
-  margin-top: -7rem;
-  width: 50rem;
+  margin-top: -1rem;
+  width: 40rem;
 }

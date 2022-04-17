@@ -33,6 +33,7 @@ FONT SIZE SYSTEM (px)
 /*------------------------ */
 
 html, body {
+  // overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -42,10 +43,10 @@ body {
   color: $very_dark_grayish_blue; /*we put color in body because - color gets inherited*/
 }
 
-.container {
-  overflow: hidden;
+// .container {
+  // overflow: hidden;
   // width: 100%;
-}
+// }
 
 .top-container {
   /* width: 960px; */
