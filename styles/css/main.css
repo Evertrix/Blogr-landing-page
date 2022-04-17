@@ -28,8 +28,11 @@ FONT SIZE SYSTEM (px)
 /*------------------------ */
 /*GENERAL STYLES */
 /*------------------------ */
-body {
+html, body {
   overflow-x: hidden;
+}
+
+body {
   /* The priority font-family will be Intern. If not available, use the second option which is sans-serif */
   font-family: "Overpass", sans-serif;
   color: hsl(207deg, 13%, 34%);
@@ -38,7 +41,6 @@ body {
 
 .container {
   overflow: hidden;
-  /*width: 100%;*/
 }
 
 .top-container {
@@ -325,9 +327,9 @@ header {
   grid-column: 2/4;
   /* span from grid column line 1 to 3 (i.e., span 2 columns) */
   grid-row: 2/4;
-  margin-left: -5rem;
-  margin-top: -3rem;
-  width: 43.75rem;
+  margin-left: -7rem;
+  margin-top: -7rem;
+  width: 50rem;
 }
 
 /*------------------------ */
@@ -452,15 +454,15 @@ footer {
   color: hsl(0deg, 0%, 100%);
   display: grid;
   align-items: center;
-  border-top-right-radius: 80px;
+  border-top-right-radius: 5rem;
 }
 
 .footer-wrapper {
-  width: 1080px;
-  margin: 100px auto;
+  width: 67.5rem;
+  margin: 6.25rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 200px;
+  gap: 12.5rem;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -468,8 +470,8 @@ footer {
 
 h6 {
   font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 24px;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
 }
 
 li {
@@ -478,7 +480,7 @@ li {
 }
 
 li:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .col-1 ul li:hover,

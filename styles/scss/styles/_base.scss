@@ -31,8 +31,12 @@ FONT SIZE SYSTEM (px)
 /*------------------------ */
 /*GENERAL STYLES */
 /*------------------------ */
-body {
+
+html, body {
   overflow-x: hidden;
+}
+
+body {
   /* The priority font-family will be Intern. If not available, use the second option which is sans-serif */
   font-family: 'Overpass', sans-serif;
   color: $very_dark_grayish_blue; /*we put color in body because - color gets inherited*/
@@ -40,7 +44,7 @@ body {
 
 .container {
   overflow: hidden;
-  /*width: 100%;*/
+  // width: 100%;
 }
 
 .top-container {

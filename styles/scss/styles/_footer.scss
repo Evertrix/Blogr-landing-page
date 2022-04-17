@@ -7,15 +7,15 @@ footer {
   color: hsl(0, 0%, 100%);
   display: grid;
   align-items: center;
-  border-top-right-radius: 80px;
+  border-top-right-radius: 5rem;
 }
 
 .footer-wrapper {
-  width: 1080px;
-  margin: 100px auto;
+  width: 67.5rem; // 1080px
+  margin: 6.25rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 200px;
+  gap: 12.5rem;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -23,8 +23,8 @@ footer {
 
 h6 {
   font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 24px;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
 }
 
 li {
@@ -33,7 +33,7 @@ li {
 }
 
 li:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .col-1 ul li:hover,
