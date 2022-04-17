@@ -36,8 +36,8 @@ Mobile(325px):
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/blogr-landing-page-using-html-css-and-js-uEuPVH-N4)
-- Live Site URL: [Live site URL](https://blogr-landing-page-eight.vercel.app/)
+- Solution URL: [Solution URL]()
+- Live Site URL: [Live site URL]()
 
 ## My process
 
