@@ -9,20 +9,20 @@
 
 
 .conclusion-wrapper {
-  margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   justify-content: center;
+  margin-bottom: 5rem;
   background-repeat: no-repeat;
   background-position: -55% bottom;
   z-index: 1;
 }
 
 .img-conclusion-desktop {
+  z-index: 1;
   max-width: 100vw;
   margin-left: -40rem;
-  z-index: 1;
 }
 
 .conclusion-section--information {
@@ -32,22 +32,22 @@
 }
 
 .conclusion-section--free-open-simple--heading {
+  margin-bottom: 24px;
   font-weight: 600;
   font-size: 24px;
   color: hsl(208, 49%, 24%);
-  margin-bottom: 24px;
 }
 
 .conclusion-section--free-open-simple--text {
-  line-height: 1.6;
   margin-bottom: 30px;
+  line-height: 1.6;
 }
 
 .conclusion-section-powerful--heading {
+  margin-bottom: 24px;
   font-weight: 600;
   font-size: 24px;
   color: hsl(208, 49%, 24%);
-  margin-bottom: 24px;
 }
 
 .conclusion-section-powerful--text {

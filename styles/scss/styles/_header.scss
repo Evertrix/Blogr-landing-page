@@ -10,9 +10,9 @@ section {
 }
 
 header {
-  padding-top: 4rem;
   display: grid;
   grid-template-columns: 1fr 6fr;
+  padding-top: 4rem;
 }
 
 .full-nav {
@@ -55,23 +55,23 @@ header {
 .sub-header {
   position: relative;
   display: block;
-  text-align: center;
   grid-column: 1 / span 3;
   grid-row: 3;
+  text-align: center;
 }
 
 .main-heading {
-  color: $white;
+  margin-bottom: 1rem;
   font-weight: 600;
   font-size: 3.25rem;
-  margin-bottom: 1rem;
+  color: $white;
 }
 
 .sub-heading {
-  color: $white;
+  margin-bottom: 3rem;
   font-size: 1.125rem;
   font-weight: 300;
-  margin-bottom: 3rem;
+  color: $white;
 }
 
 .sub-buttons {
@@ -83,8 +83,9 @@ header {
 }
 
 .connect-btn:hover {
-  text-decoration: underline;
   font-weight: 600;
+  text-decoration: underline;
+
 }
 
 .connect-dropdown {
@@ -92,14 +93,13 @@ header {
 }
 
 .connect--dropdown-content {
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-
   width: 150px;
-  position: absolute;
-  border-radius: 0.625rem;
   margin-top: 1rem;
   padding: 0.938rem 1.563rem;
+  border-radius: 0.625rem;
   background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.313rem 0.938rem;
   z-index: 1;

@@ -5,6 +5,13 @@
 /* NEUTRAL */
 /* GRADIENT */
 /* BACKGROUND GRADIENT */
+/*------------------------ */
+/* COLORS */
+/*------------------------ */
+/* PRIMARY */
+/* NEUTRAL */
+/* GRADIENT */
+/* BACKGROUND GRADIENT */
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -506,13 +513,6 @@ li:not(:last-child) {
   grid-template-columns: repeat(1, 1fr);
 }
 
-/*------------------------ */
-/* COLORS */
-/*------------------------ */
-/* PRIMARY */
-/* NEUTRAL */
-/* GRADIENT */
-/* BACKGROUND GRADIENT */
 @media (min-width: 889px) {
   /* When resizing clicked/not clicked buttons, the desktop nav menu will always appear on screen
   when the viewport is more then 889px and hiding hamburger menu and close-btn */

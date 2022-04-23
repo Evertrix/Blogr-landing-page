@@ -3,33 +3,34 @@
 /*------------------------ */
 
 footer {
-  background-color: hsl(240, 10%, 16%);
-  color: hsl(0, 0%, 100%);
   display: grid;
   align-items: center;
   border-top-right-radius: 5rem;
+  background-color: hsl(240, 10%, 16%);
+  color: hsl(0, 0%, 100%);
 }
 
 .footer-wrapper {
-  width: 67.5rem; // 1080px
-  margin: 6.25rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12.5rem;
   justify-content: center;
   align-content: center;
   justify-items: center;
+  margin: 6.25rem auto;
+  width: 67.5rem; // 1080px
 }
 
 h6 {
+  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 1.125rem;
-  margin-bottom: 1.5rem;
 }
 
 li {
   color: hsl(240, 2%, 79%);
   list-style-type: none;
+  cursor: pointer;
 }
 
 li:not(:last-child) {

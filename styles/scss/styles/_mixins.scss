@@ -1,0 +1,17 @@
+@mixin default-text-font {
+  font-size: 0.875rem;
+}
+
+@mixin btn-customize($color, $bg, $border, $borderRadius) {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border: $border;
+  border-radius: $borderRadius;
+  background-color: transparent;
+  color: $white;
+  font-weight: 600;
+}
+
+@mixin bg-colors() {
+
+}

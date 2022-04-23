@@ -3,35 +3,35 @@
 /*------------------------ */
 
 .state-of-the-art-section {
+  margin-bottom: 5rem;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
   background-image: url(../../images/bg-pattern-circles.svg), linear-gradient(#2c2d3f, #3f4164);
   background-repeat: no-repeat;
   background-color: hsl(208, 49%, 24%);
-  border-bottom-left-radius: 5rem;
-  border-top-right-radius: 5rem;
   background-size: 70%, 100%;
   background-position: -48% 81%, 0% 0%;
-  margin-bottom: 5rem;
   color: hsl(0, 0%, 100%);
 }
 
 .state-of-the-art--container {
-  width: 67.5rem;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   justify-content: space-between;
+  z-index: 1;
+  width: 67.5rem;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: -55% bottom;
-  z-index: 1;
 }
 
 .state-of-the-art--svg {
-  max-width: 100vw;
   position: relative;
+  z-index: 1;
+  max-width: 100vw;
   margin-top: -4rem;
   margin-left: -3rem;
-  z-index: 1;
 }
 
 .state-of-the-art--image {
@@ -42,15 +42,15 @@
 .state-of-the-art--information{
   justify-self: end;
   max-width: 100%;
-  align-self: center;
   margin-left: 2rem;
+  align-self: center;
 }
 
 .state-of-the-art--information--heading {
+  margin-bottom: 1.5rem;
   font-weight: 300;
   font-size: 2rem;
   color: hsl(0, 0%, 100%);
-  margin-bottom: 1.5rem;
 }
 
 .state-of-the-art--information--text {
