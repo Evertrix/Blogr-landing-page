@@ -15,8 +15,6 @@ window.addEventListener("resize", () => {
             featured_buttons.style.visibility = "visible";
             dropdown_content.style.visibility = "visible";
         }
-
-
     }
 });
 
@@ -40,6 +38,5 @@ close_btn.addEventListener('click', () => {
     close_btn.classList.add('hidden');
     full_navigation.style.visibility = "hidden";
     navigation.style.visibility = "hidden";
-    // dropdown_content.style.visibility = "visible";
     featured_buttons.style.visibility = "hidden";
 });

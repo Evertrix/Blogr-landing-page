@@ -36,8 +36,8 @@ Mobile(325px):
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-landing-page-with-css-grid-and-vanilla-js-B173HLQr5)
+- Live Site URL: [Live site URL](https://blogr-landing-page-evertrix.netlify.app/)
 
 ## My process
 
