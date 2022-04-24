@@ -64,7 +64,7 @@ The JavaScript code logic needs a bit more enhancing to which I will be make mor
 
 ## Author
 
-- Website - [Github/evertrix](https://github.com/Evertrix)
+- Website - [Github/evertrix](https://github.com/Evgeni-Georgiev)
 - Frontend Mentor - [@Evertrix](https://www.frontendmentor.io/profile/Evertrix)
 - LinkedIn - 
 
