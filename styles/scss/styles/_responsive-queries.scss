@@ -61,7 +61,12 @@
   }
 
   .sub-buttons {
-    display: block;
+    // display: block;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
   }
 
   .btn-with-bg, .btn-without-bg {
@@ -139,6 +144,10 @@
     box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
   }
 
+  .btn-login {
+    margin: 0 auto;
+  }
+
   .fa-angle-down {
     color: hsl(11, 100%, 65%);
   }
@@ -173,7 +182,6 @@
     border-radius: 2rem;
     background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     color: hsl(0, 0%, 100%);
-    /*width: calc(100% - 100px);*/
   }
 
   .login-btn, .sign-up-btn {
@@ -197,6 +205,9 @@
   }
 
   .navigation, .featured-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     visibility: hidden;
     z-index: 1;
     top: 20%;
@@ -225,18 +236,6 @@
   .top-container, .designed-for-the-future-section, .state-of-the-art--container, .conclusion-section {
     width: auto;
   }
-
-  //.designed-for-the-future-section{
-  //  width: auto;
-  //}
-  //
-  //.state-of-the-art--container {
-  //  width: auto;
-  //}
-  //
-  //.conclusion-section {
-  //  width: auto;
-  //}
 
   .mobile-navigation {
     display: block;
@@ -393,10 +392,12 @@
 
 
   .sub-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     text-align: center;
+    width: auto;
+    gap: 10px;
   }
 }
 
@@ -406,9 +407,4 @@ SPACING SYSTEM (px)
 
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-*/
-
-/*
-    MAIN COLOR: #087f5b
-    GREY COLOR: #343a40
 */

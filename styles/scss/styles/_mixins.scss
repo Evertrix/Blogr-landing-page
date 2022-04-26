@@ -4,7 +4,7 @@
 
 @mixin btn-customize($color, $bg, $border, $borderRadius) {
   display: inline-block;
-  padding: 1.6rem 3.2rem;
+  padding: 1rem 2rem;
   border: $border;
   border-radius: $borderRadius;
   background-color: transparent;

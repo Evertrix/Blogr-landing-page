@@ -19,10 +19,6 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
-/*
-    MAIN COLOR: #087f5b
-    GREY COLOR: #343a40
-*/
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 /*font-family: 'Overpass', sans-serif;*/
 /*font-family: 'Ubuntu', sans-serif;*/
@@ -68,9 +64,9 @@ section {
 }
 
 header {
-  padding-top: 4rem;
   display: grid;
   grid-template-columns: 1fr 6fr;
+  padding-top: 4rem;
 }
 
 .full-nav {
@@ -113,23 +109,23 @@ header {
 .sub-header {
   position: relative;
   display: block;
-  text-align: center;
   grid-column: 1/span 3;
   grid-row: 3;
+  text-align: center;
 }
 
 .main-heading {
-  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
   font-weight: 600;
   font-size: 3.25rem;
-  margin-bottom: 1rem;
+  color: hsl(0deg, 0%, 100%);
 }
 
 .sub-heading {
-  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 3rem;
   font-size: 1.125rem;
   font-weight: 300;
-  margin-bottom: 3rem;
+  color: hsl(0deg, 0%, 100%);
 }
 
 .sub-buttons {
@@ -141,8 +137,8 @@ header {
 }
 
 .connect-btn:hover {
-  text-decoration: underline;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .connect-dropdown {
@@ -150,13 +146,13 @@ header {
 }
 
 .connect--dropdown-content {
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 150px;
-  position: absolute;
-  border-radius: 0.625rem;
   margin-top: 1rem;
   padding: 0.938rem 1.563rem;
+  border-radius: 0.625rem;
   background-color: hsl(0deg, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.313rem 0.938rem;
   z-index: 1;
@@ -193,15 +189,8 @@ header {
   border-bottom-left-radius: 5rem;
 }
 
-.btn-with-bg {
-  display: inline-block;
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(356deg, 100%, 66%);
-  border-radius: 3.125rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  border: none;
-  padding: 1rem 2rem;
+button {
+  cursor: pointer;
 }
 
 .btn-very-light-red-hover:hover {
@@ -214,26 +203,37 @@ header {
   color: hsl(355deg, 100%, 74%);
 }
 
-.btn-without-bg {
+.btn-with-bg {
   display: inline-block;
-  background-color: transparent;
-  color: hsl(0deg, 0%, 100%);
-  border: 0.063rem solid hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(356deg, 100%, 66%);
   border-radius: 3.125rem;
   font-size: 0.875rem;
   font-weight: 600;
+  border: none;
   padding: 1rem 2rem;
 }
 
-.btn-login {
+.btn-without-bg {
+  font-size: 0.875rem;
   display: inline-block;
+  padding: 1rem 2rem;
+  border: 0.063rem solid hsl(0deg, 0%, 100%);
+  border-radius: 3.125rem;
   background-color: transparent;
   color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+}
+
+.btn-login {
+  font-size: 0.875rem;
+  display: inline-block;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 3.125rem;
-  font-size: 0.875rem;
+  background-color: transparent;
+  color: hsl(0deg, 0%, 100%);
   font-weight: 600;
-  padding: 1rem 2rem;
 }
 
 .btn-with-bg + .btn-without-bg,
@@ -253,24 +253,24 @@ header {
 
 /*GRID BOX*/
 .designed-for-the-future--information-section {
-  margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   justify-content: center;
+  margin-bottom: 5rem;
   background-repeat: no-repeat;
   background-position: -55% bottom;
   z-index: 1;
 }
 
 .designed-for-the-future--heading {
+  position: relative;
   margin-left: 4rem;
   margin-right: 4rem;
-  position: relative;
   text-align: center;
-  color: hsl(208deg, 49%, 24%);
   font-weight: 600;
   font-size: 30px;
+  color: hsl(208deg, 49%, 24%);
 }
 
 .designed-for-the-future--description-section {
@@ -294,15 +294,15 @@ header {
 }
 
 .extensible-editor--information .extensible-editor--introduction {
+  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 1.5rem;
   color: hsl(208deg, 49%, 24%);
-  margin-bottom: 1.5rem;
 }
 
 .extensible-editor--information .extensible-editor--text {
-  word-spacing: 1px;
   color: hsl(207deg, 13%, 34%);
+  word-spacing: 1px;
   line-height: 1.6;
 }
 
@@ -312,63 +312,63 @@ header {
 }
 
 .robust-content--information .robust-content--heading {
+  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 1.5rem;
   color: hsl(208deg, 49%, 24%);
-  margin-bottom: 1.5rem;
 }
 
 .robust-content--information .robust-content--text {
-  word-spacing: 1px;
   color: hsl(207deg, 13%, 34%);
+  word-spacing: 1px;
   line-height: 1.6;
 }
 
 .featured-desktop {
   position: absolute;
   max-width: 100vw;
+  width: 40rem;
   height: auto;
   grid-column: 2/4;
   /* span from grid column line 1 to 3 (i.e., span 2 columns) */
   grid-row: 2/4;
   margin-left: -9rem;
   margin-top: -1rem;
-  width: 40rem;
 }
 
 /*------------------------ */
 /*STATE OF THE ART SECTION */
 /*------------------------ */
 .state-of-the-art-section {
+  margin-bottom: 5rem;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
   background-image: url(../../images/bg-pattern-circles.svg), linear-gradient(#2c2d3f, #3f4164);
   background-repeat: no-repeat;
   background-color: hsl(208deg, 49%, 24%);
-  border-bottom-left-radius: 5rem;
-  border-top-right-radius: 5rem;
   background-size: 70%, 100%;
   background-position: -48% 81%, 0% 0%;
-  margin-bottom: 5rem;
   color: hsl(0deg, 0%, 100%);
 }
 
 .state-of-the-art--container {
-  width: 67.5rem;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   justify-content: space-between;
+  z-index: 1;
+  width: 67.5rem;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: -55% bottom;
-  z-index: 1;
 }
 
 .state-of-the-art--svg {
-  max-width: 100vw;
   position: relative;
+  z-index: 1;
+  max-width: 100vw;
   margin-top: -4rem;
   margin-left: -3rem;
-  z-index: 1;
 }
 
 .state-of-the-art--image {
@@ -379,15 +379,15 @@ header {
 .state-of-the-art--information {
   justify-self: end;
   max-width: 100%;
-  align-self: center;
   margin-left: 2rem;
+  align-self: center;
 }
 
 .state-of-the-art--information--heading {
+  margin-bottom: 1.5rem;
   font-weight: 300;
   font-size: 2rem;
   color: hsl(0deg, 0%, 100%);
-  margin-bottom: 1.5rem;
 }
 
 .state-of-the-art--information--text {
@@ -405,20 +405,20 @@ header {
 }
 
 .conclusion-wrapper {
-  margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   justify-content: center;
+  margin-bottom: 5rem;
   background-repeat: no-repeat;
   background-position: -55% bottom;
   z-index: 1;
 }
 
 .img-conclusion-desktop {
+  z-index: 1;
   max-width: 100vw;
   margin-left: -40rem;
-  z-index: 1;
 }
 
 .conclusion-section--information {
@@ -428,22 +428,22 @@ header {
 }
 
 .conclusion-section--free-open-simple--heading {
+  margin-bottom: 24px;
   font-weight: 600;
   font-size: 24px;
   color: hsl(208deg, 49%, 24%);
-  margin-bottom: 24px;
 }
 
 .conclusion-section--free-open-simple--text {
-  line-height: 1.6;
   margin-bottom: 30px;
+  line-height: 1.6;
 }
 
 .conclusion-section-powerful--heading {
+  margin-bottom: 24px;
   font-weight: 600;
   font-size: 24px;
   color: hsl(208deg, 49%, 24%);
-  margin-bottom: 24px;
 }
 
 .conclusion-section-powerful--text {
@@ -454,33 +454,38 @@ header {
 /*FOOTER SECTION */
 /*------------------------ */
 footer {
-  background-color: hsl(240deg, 10%, 16%);
-  color: hsl(0deg, 0%, 100%);
   display: grid;
   align-items: center;
   border-top-right-radius: 5rem;
+  background-color: hsl(240deg, 10%, 16%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .footer-wrapper {
-  width: 67.5rem;
-  margin: 6.25rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12.5rem;
   justify-content: center;
   align-content: center;
   justify-items: center;
+  margin: 6.25rem auto;
+  width: 67.5rem;
 }
 
 h6 {
+  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 1.125rem;
-  margin-bottom: 1.5rem;
+}
+
+a {
+  cursor: pointer;
 }
 
 li {
   color: hsl(240deg, 2%, 79%);
   list-style-type: none;
+  cursor: pointer;
 }
 
 li:not(:last-child) {
@@ -549,11 +554,11 @@ li:not(:last-child) {
     position: relative;
     max-width: 100vw;
     height: auto;
-    grid-column: 2/4;
-    grid-row: 2/4;
+    width: 24rem;
     margin-left: 12rem;
     margin-top: 7rem;
-    width: 24rem;
+    grid-column: 2/4;
+    grid-row: 2/4;
   }
 
   .state-of-the-art--container {
@@ -565,14 +570,18 @@ li:not(:last-child) {
   }
 
   .footer-wrapper {
-    width: auto;
-    gap: 100px;
     margin-left: 0;
     margin-right: 0;
+    width: auto;
+    gap: 100px;
   }
 
   .sub-buttons {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
   }
 
   .btn-with-bg, .btn-without-bg {
@@ -580,8 +589,8 @@ li:not(:last-child) {
   }
 
   .state-of-the-art--information {
-    padding: 0;
     margin-left: 0;
+    padding: 0;
   }
 
   .state-of-the-art--svg {
@@ -603,8 +612,8 @@ li:not(:last-child) {
   }
 
   .sub-header {
-    margin-right: 128px;
     width: auto;
+    margin-right: 128px;
   }
 
   header {
@@ -618,31 +627,35 @@ li:not(:last-child) {
 }
 @media (max-width: 889px) {
   header {
-    padding-top: 64px;
     display: grid;
     grid-template-columns: 4fr 2fr 4fr;
+    padding-top: 64px;
   }
 
   .full-nav {
     position: absolute;
     top: 128px;
-    padding: 50px 0;
+    left: 25%;
+    z-index: 1;
     display: block;
     grid-template-columns: 1fr;
-    align-items: center;
-    max-width: 100%;
     justify-content: center;
     justify-items: center;
+    max-width: 100%;
     width: 50%;
-    left: 25%;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    background-color: hsl(0deg, 0%, 100%);
-    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    padding: 50px 0;
     border: none;
     border-radius: 0.5rem;
-    z-index: 1;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    background-color: hsl(0deg, 0%, 100%);
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-login {
+    margin: 0 auto;
   }
 
   .fa-angle-down {
@@ -651,23 +664,23 @@ li:not(:last-child) {
 
   .connect--dropdown-content {
     position: relative;
-    border-radius: 10px;
-    margin: 16px auto;
-    background-color: rgb(242, 242, 244);
-    box-shadow: none;
     z-index: 1;
     width: calc(100% - 60px);
+    margin: 16px auto;
+    border-radius: 10px;
+    background-color: rgb(242, 242, 244);
+    box-shadow: none;
     line-height: 24px;
   }
 
   .featured-buttons {
+    position: relative;
+    width: calc(100% - 60px);
     display: grid;
     justify-content: space-around;
     grid-template-columns: 1fr;
-    position: relative;
-    text-align: center;
     border-top: 2px solid rgb(242, 242, 244);
-    width: calc(100% - 60px);
+    text-align: center;
   }
 
   .login-btn {
@@ -675,11 +688,10 @@ li:not(:last-child) {
   }
 
   .sign-up-btn {
+    margin: 0 auto !important;
+    border-radius: 2rem;
     background: linear-gradient(90deg, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
     color: hsl(0deg, 0%, 100%);
-    border-radius: 2rem;
-    /*width: calc(100% - 100px);*/
-    margin: 0 auto !important;
   }
 
   .login-btn, .sign-up-btn {
@@ -693,22 +705,25 @@ li:not(:last-child) {
   }
 
   .navigation {
-    top: 20%;
     visibility: hidden;
+    top: 20%;
     z-index: 1;
-    line-height: 52px;
+    margin: 0 auto;
     text-align: center;
     align-items: center;
-    margin: 0 auto;
+    line-height: 52px;
   }
 
   .navigation, .featured-buttons {
-    top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     visibility: hidden;
     z-index: 1;
+    top: 20%;
+    margin: 0 auto;
     text-align: center;
     align-items: center;
-    margin: 0 auto;
   }
 
   .btn-with-bg + .btn-without-bg, .btn-login + .btn-with-bg {
@@ -716,50 +731,38 @@ li:not(:last-child) {
   }
 
   .navigation {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    position: relative;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
   }
 
   .navigation a {
-    color: #2c2d3f;
     margin-right: 0;
+    color: #2c2d3f;
   }
 
-  .top-container {
-    width: auto;
-  }
-
-  .designed-for-the-future-section {
-    width: auto;
-  }
-
-  .state-of-the-art--container {
-    width: auto;
-  }
-
-  .conclusion-section {
+  .top-container, .designed-for-the-future-section, .state-of-the-art--container, .conclusion-section {
     width: auto;
   }
 
   .mobile-navigation {
+    display: block;
     justify-self: end;
     max-width: 100vh;
-    display: block;
   }
 
   .sub-header {
+    width: auto;
     margin-left: 20px;
     margin-right: 20px;
-    width: auto;
   }
 
   .middle-heading {
+    width: auto;
     margin-left: 64px;
     margin-right: 64px;
-    width: auto;
   }
 
   .main-heading {
@@ -771,20 +774,20 @@ li:not(:last-child) {
   }
 
   .designed-for-the-future--information-section {
-    margin-bottom: 20rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     justify-content: center;
+    margin-bottom: 20rem;
     background-repeat: no-repeat;
     background-position: -55% bottom;
   }
 
   .designed-for-the-future--description-section {
-    order: 1;
-    padding-left: 0;
     margin-left: 64px;
     margin-right: 64px;
+    padding-left: 0;
+    order: 1;
   }
 
   .extensible-editor--image {
@@ -808,14 +811,14 @@ li:not(:last-child) {
   }
 
   .state-of-the-art--container {
-    margin-left: 64px;
-    margin-right: 64px;
-    margin-bottom: 400px;
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     justify-content: center;
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-bottom: 400px;
+    text-align: center;
   }
 
   .state-of-the-art-section {
@@ -829,10 +832,10 @@ li:not(:last-child) {
   .state-of-the-art--image {
     display: block;
     left: 50%;
+    height: 50%;
     margin-right: auto;
     margin-left: auto;
     margin-top: -50%;
-    height: 50%;
   }
 
   .state-of-the-art--svg {
@@ -848,15 +851,15 @@ li:not(:last-child) {
   .conclusion-section--image {
     display: block;
     left: 50%;
+    height: 50%;
     margin-right: 0;
     margin-left: 0;
     margin-top: -50%;
-    height: 50%;
   }
 
   .img-conclusion-desktop {
-    margin-left: 0;
     display: none;
+    margin-left: 0;
   }
 
   .img-conclusion-mobile {
@@ -877,9 +880,9 @@ li:not(:last-child) {
 }
 @media (max-width: 480px) {
   .full-nav {
-    width: 80%;
     left: 10%;
     top: 128px;
+    width: 80%;
   }
 
   .state-of-the-art-section {
@@ -889,16 +892,18 @@ li:not(:last-child) {
 }
 @media (max-width: 339px) {
   .full-nav {
-    width: 100%;
     left: 0;
     top: 128px;
+    width: 100%;
   }
 
   .sub-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     text-align: center;
+    width: auto;
+    gap: 10px;
   }
 }
 /*
@@ -907,10 +912,6 @@ SPACING SYSTEM (px)
 
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-*/
-/*
-    MAIN COLOR: #087f5b
-    GREY COLOR: #343a40
 */
 
 /*# sourceMappingURL=main.css.map */

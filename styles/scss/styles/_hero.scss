@@ -1,4 +1,5 @@
 @import "_variables";
+@import "_mixins";
 
 /*------------------------ */
 /*HERO SECTION */
@@ -12,6 +13,10 @@
   border-bottom-left-radius: 5rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn-very-light-red-hover:hover {
   background-color: $very_light_red;
   color: $white;
@@ -20,6 +25,17 @@
 .btn-very-light-red-hover-reverse:hover {
   background-color: $white;
   color: $very_light_red;
+}
+
+.btn-with-bg {
+  display: inline-block;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(356deg, 100%, 66%);
+  border-radius: 3.125rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 2rem;
 }
 
 .btn-without-bg {
