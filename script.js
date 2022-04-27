@@ -13,9 +13,17 @@ window.addEventListener("resize", () => {
             full_navigation.style.visibility = "visible";
             navigation.style.visibility = "visible";
             featured_buttons.style.visibility = "visible";
-            dropdown_content.style.visibility = "visible";
+            // dropdown_content.style.visibility = "visible";
+            // dropdown_content.style.visibility = "visible";
+            dropdown_content.classList.remove('hidden');
         }
     }
+
+    // if (close_btn.clicked === true) {
+    //     if (window.matchMedia("(max-width: 889px)").matches) {
+    //         dropdown_content.style.visibility = "hidden";
+    //     }
+    // }
 });
 
 connect_btn.addEventListener('click', () => {
@@ -28,7 +36,7 @@ hamburger_menu.addEventListener('click', () => {
     close_btn.classList.remove('hidden');
     full_navigation.style.visibility = "visible";
     navigation.style.visibility = "visible";
-    dropdown_content.style.visibility = "visible";
+    // dropdown_content.style.visibility = "visible";
     featured_buttons.style.visibility = "visible";
 });
 
@@ -39,4 +47,6 @@ close_btn.addEventListener('click', () => {
     full_navigation.style.visibility = "hidden";
     navigation.style.visibility = "hidden";
     featured_buttons.style.visibility = "hidden";
+    // dropdown_content.style.visibility = "hidden";
+    // dropdown_content.style.visibility = "hidden";
 });
